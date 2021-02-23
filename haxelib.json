@@ -1,0 +1,11 @@
+{
+    "name": "AndroidOrientation",
+    "url": "https://danielpancake.github.io/",
+    "license": "MIT",
+    "tags": ["android", "openfl", "orientation"],
+    "description": "Haxe extension which allows you to set screen orientation on android",
+    "version": "0.1.0",
+    "releasenote": "Initial release",
+    "contributors": ["restorer", "danielpancake"],
+    "dependencies": {}
+}

@@ -1,0 +1,19 @@
+<xml>
+    <include name="${HXCPP}/build-tool/BuildCommon.xml"/>
+
+    <files id="common">
+        <compilerflag value="-Iinclude"/>
+		<file name="common/ExternalInterface.cpp"/>
+    </files>
+
+	<set name="DEBUGEXTRA" value="-debug" if="fulldebug"/>
+    
+    <target id="NDLL" output="${LIBPREFIX}androidorientation${MSVC_LIB_VERSION}${DEBUGEXTRA}${LIBEXTRA}" tool="linker" toolid="${STD_MODULE_LINK}">
+        <outdir name="../ndll/${BINDIR}"/>
+        <files id="common"/>
+	</target>
+    
+	<target id="default">
+        <target id="NDLL"/>
+	</target>
+</xml>
