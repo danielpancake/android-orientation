@@ -15,7 +15,7 @@ lime rebuild android-orientation android
 - Project.xml:
 ```xml
 <!-- Add this line in the libraries section of your Project.xml file -->
-<haxelib name="AndroidOrientation" />
+<haxelib name="android-orientation" />
 ```
 
 - In any haxe package of your project:
